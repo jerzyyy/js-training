@@ -9,6 +9,17 @@
  */
 
 // Your code :
+function multiply(a, b) {
+    let tot = 0
+    for (let i = 0; i < Math.abs(b); i++) {
+        tot += Math.abs(a)
+    }
+    if (a > 0 && b > 0 || a < 0 && b < 0 || a === 0 || b === 0)
+        return tot
+    else
+        return -tot
+}
+
 
 //* Begin of tests
 const assert = require('assert')
@@ -25,4 +36,4 @@ assert.strictEqual(multiply(0, 0), 0)
 assert.strictEqual(multiply(123, -22), -2706)
 assert.strictEqual(multiply(-22, 123), -2706)
 assert.strictEqual(multiply(-22, -123), 2706)
-// End of tests */
+    // End of tests */

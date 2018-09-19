@@ -7,6 +7,9 @@
  */
 
 // Your code :
+function add(number1, number2) {
+    return (number1 + number2)
+}
 
 //* Begin of tests
 const assert = require('assert')
@@ -16,4 +19,4 @@ assert.strictEqual(typeof add, 'function')
 assert.strictEqual(add.length, 2)
 assert.strictEqual(add(2, 2), 4)
 assert.strictEqual(add(rand, rand), rand + rand)
-// End of tests */
+    // End of tests */
